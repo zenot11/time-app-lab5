@@ -9,3 +9,4 @@ def test_time_route():
     data = response.get_json()
     assert "time" in data
     assert isinstance(data["time"], int)
+    assert data["time"] > 0
